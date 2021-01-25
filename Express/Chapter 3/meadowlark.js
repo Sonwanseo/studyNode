@@ -1,3 +1,4 @@
+var fortune = require('./lib/fortune');
 var express = require('express');
 
 var app = express();
@@ -23,8 +24,7 @@ app.get('/', function(req, res) {
     res.render('home');
 });
 app.get('/about', function(req, res) {
-    var randomFortune = fortunes[Math.floor(Math.random() * fortunes.length)];
-    res.render('about', { fortune: randomFortune});
+    res.render('about', { fortune: fortune.getFortune() });
 })
 
 // 404 폴백 핸들러 (미들웨어)
