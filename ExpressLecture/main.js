@@ -1,17 +1,24 @@
-var http = require('http');
-var fs = require('fs');
-var app = http.createServer(function(request,response){
-    var url = request.url;
-    if(request.url == '/'){
-      url = '/index.html';
+const http = require('http');
+const fs = require('fs');
+const url = require('url');
+
+const app = http.createServer(function(request,response){
+    const _url = request.url;
+    const queryData = url.parse(_url, true).query;
+    console.log(queryData.id);
+
+    if(_url == '/'){
+      _url = '/index.html';
     }
-    if(request.url == '/favicon.ico'){
+
+    if(_url == '/favicon.ico'){
         response.writeHead(404);
         response.end();
         return;
     }
+
     response.writeHead(200);
-    response.end(fs.readFileSync(__dirname + url));
- 
+    response.end(queryData.id);
 });
-app.listen(80);
+
+app.listen(3000);
