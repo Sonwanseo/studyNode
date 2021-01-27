@@ -39,8 +39,8 @@ const app = http.createServer(function (request, response) {
       </body>
       </html>
       `
-    response.end(t emplate);
+    response.end(template);
   })
 });
 
-app.listen(3000);
+app.listen(3000); 
