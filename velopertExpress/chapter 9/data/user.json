@@ -6,5 +6,9 @@
 	"newuser": {
 		"password": "changedpass",
 		"name": "david"
+	},
+	"sonwanseo": {
+		"password": "123123",
+		"name": "wanseo"
 	}
 }
