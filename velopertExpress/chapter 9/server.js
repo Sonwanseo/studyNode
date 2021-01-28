@@ -23,4 +23,4 @@ app.use(session({
     saveUninitialized: true
 }));
 
-const router = require('./router/main')(app);
+const router = require('./router/main')(app, fs);
