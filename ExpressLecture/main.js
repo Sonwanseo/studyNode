@@ -9,7 +9,11 @@ const app = http.createServer(function (request, response) {
 
   if (pathname === '/') {
     if (queryData.id === undefined) {
-      title = "Welcome";
+      fs.readdir('./data', function (error, filelist) {
+        console.log(filelist);
+      })
+
+      const title = "Welcome";
       const description = "Hello, Node.js";
       const template = `
       <!doctype html>
