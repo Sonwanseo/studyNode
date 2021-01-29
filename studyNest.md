@@ -11,3 +11,11 @@ Nest.js는 구조가 있음
 npm i -g @nestjs/cli  
 nest new  
 위 명령어로 nest 프로젝트 생성 가능
+
+nest의 구조
+- main.ts는 express에서 server.js와 같은 개념  
+NestFactory.create(모듈)로 nest 모듈 생성
+- 모듈: nest 프로젝트에서 controllers와 services를 모아 NestFactory.create에 전달  
+index.js 같은 개념
+- 컨트롤러(controllers): url을 받아 함수를 호출하는 로직
+- 서비스(services || providers): 비즈니스 로직을 담당하는 파일
