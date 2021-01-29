@@ -7,3 +7,7 @@ Nest.js는 Expres 위에서 동작하는 Node.js 프레임워크
 하지만, 이는 규모가 큰 프로젝트나 팀 프로젝트를 할 때 단점으로 작용할 수 있음
 
 Nest.js는 구조가 있음
+
+npm i -g @nestjs/cli  
+nest new  
+위 명령어로 nest 프로젝트 생성 가능
