@@ -26,3 +26,5 @@ index.js 같은 개념
 @Params를 이용하여 파라미터를 가져올 수 있음  
 @Body를 이용하여 request.body를 가져올 수 있음  
 @Query를 이용하여 쿼리스트링을 가져올 수 있음
+
+~.spec.ts 파일은 테스트를 위한 파일
