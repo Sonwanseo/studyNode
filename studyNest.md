@@ -19,3 +19,6 @@ NestFactory.create(모듈)로 nest 모듈 생성
 index.js 같은 개념
 - 컨트롤러(controllers): url을 받아 함수를 호출하는 로직
 - 서비스(services || providers): 비즈니스 로직을 담당하는 파일
+
+데코레이터 바로 아래에 클래스 또는 함수가 존재해야 함  
+@Get, @Post와 같이 데코레이터를 이용하여 HTTP 메소드 정의 가능
