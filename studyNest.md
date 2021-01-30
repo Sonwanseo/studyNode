@@ -41,3 +41,8 @@ Express에서 미들웨어와 비슷한 개념
 main.ts에서 new ValidatePipe의 옵션으로 여러 가지를 넣어줄 수 있음  
 그 중 하나가 transform  
 transform: true를 하면 사용자가 입력한 값을 코드가 원하는 타입으로 변환해줌
+
+DTO 파일에서 프로퍼티에 ?를 붙임으로써 필수 값이 아닌 값으로 만들 수 있음
+
+위 코드를 PartialType으로 대체 가능
+DTO를 변환하는 것을 도와줌
