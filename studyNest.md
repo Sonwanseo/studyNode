@@ -29,3 +29,15 @@ index.js 같은 개념
 
 ~.spec.ts 파일은 테스트를 위한 파일
  
+DTO(Data Transfer Object): 비즈니스 모델 객체의 구조를 정의
+
+DTO를 쓰는 이유
+- 코드를 더 간결하게 만듦
+- NestJS가 들어오는 쿼리에 대해 유효성 검사를 할 수 있게 해줌
+
+파이프: 코드가 지나가는 통로  
+Express에서 미들웨어와 비슷한 개념
+
+main.ts에서 new ValidatePipe의 옵션으로 여러 가지를 넣어줄 수 있음  
+그 중 하나가 transform  
+transform: true를 하면 사용자가 입력한 값을 코드가 원하는 타입으로 변환해줌
