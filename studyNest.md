@@ -49,3 +49,10 @@ DTO를 변환하는 것을 도와줌
 
 app.module.ts는 다른 세부 모듈을 import하는 방식으로 사용  
 app.module.ts에 다른 세부 모듈을 import하여 사용하면 Nest가 하나의 큰 모듈로 변환함
+
+Nest는 Express 위에서 작동하기 때문에 controller에서 req, res가 필요하면 사용 가능  
+@Req, @Res decorator를 이용하여 접근 가능
+
+Nest는 Express 뿐만 아니라 Fastify 위에서도 작동  
+그렇기 때문에 Express의 req, res 등의 객체를 사용하는 것은 좋은 방법이 아님  
+Express에서 Fastify로 전환할 때 작동이 멈추게 됨
