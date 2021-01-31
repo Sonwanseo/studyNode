@@ -46,3 +46,6 @@ DTO 파일에서 프로퍼티에 ?를 붙임으로써 필수 값이 아닌 값�
 
 위 코드를 PartialType으로 대체 가능
 DTO를 변환하는 것을 도와줌
+
+app.module.ts는 다른 세부 모듈을 import하는 방식으로 사용  
+app.module.ts에 다른 세부 모듈을 import하여 사용하면 Nest가 하나의 큰 모듈로 변환함
