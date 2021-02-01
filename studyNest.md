@@ -56,3 +56,10 @@ Nest는 Express 위에서 작동하기 때문에 controller에서 req, res가 �
 Nest는 Express 뿐만 아니라 Fastify 위에서도 작동  
 그렇기 때문에 Express의 req, res 등의 객체를 사용하는 것은 좋은 방법이 아님  
 Express에서 Fastify로 전환할 때 작동이 멈추게 됨
+
+Nest는 기본적으로 Jest를 테스팅 라이브러리로 채택  
+.spec.ts 파일은 Jest가 테스팅을 할 때 찾아볼 수 있도록 설정되어 있음  
+
+테스트 종류
+- 유닛테스트: 각각의 함수를 따로 테스트하는 것
+- end-to-end(e2e): 모든 시스템을 테스트하는 것
